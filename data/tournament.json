@@ -1,0 +1,28 @@
+{
+  "config": {
+    "title": "公司中式黑八挑战赛",
+    "location": "地点待定",
+    "eventDate": "",
+    "scheduleSlots": {},
+    "stage": "registration",
+    "registrationsOpen": true,
+    "championId": null,
+    "adminPinHash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+    "eventTime": "时间待定",
+    "rulesText": "赛制：8 位参赛者随机分为 A、B 两组，各 4 人循环比赛；每组前两名交叉晋级半决赛。\n小组赛：每场 3 局 2 胜。\n淘汰赛：半决赛与决赛均为 5 局 3 胜。\n单局比分：胜方记 8 分；负方按当局已进球数记 0–7 分。\n积分排名：优先比较比赛胜场，其次比较累计净胜分。"
+  },
+  "players": [],
+  "groups": {
+    "A": [],
+    "B": []
+  },
+  "matches": [],
+  "logs": [
+    {
+      "id": "fb20d45f-149e-4407-b58f-8e2b0dfc8093",
+      "at": "2026-08-18T10:03:41.056Z",
+      "action": "清空赛事",
+      "detail": "名单与赛程已清空"
+    }
+  ]
+}

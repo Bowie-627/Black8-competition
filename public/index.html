@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#091512" />
+  <title>中式黑八挑战赛</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    .desktop-guide{display:flex;align-items:center;justify-content:center;gap:4px;flex:1}
+    .desktop-guide__label{color:#9eafa7;font-size:12px;margin-right:4px;white-space:nowrap}
+    .desktop-guide button{border:0;background:transparent;color:#9eafa7;font:inherit;font-size:13px;padding:8px 9px;border-radius:8px;cursor:pointer;white-space:nowrap}
+    .desktop-guide button:hover,.desktop-guide button.active{background:#1a4331;color:#48e092}
+    @media(max-width:900px){.desktop-guide{display:none}}
+    :root{--ink:#24352d;--muted:#77847e;--line:#dce6e0;--green:#3d8a68;--gold:#b78325;--dark:#f6f8f6;--panel:#fff;--panel2:#f4f8f5}
+    body{background:#f6f8f6;color:#24352d}.noise{display:none}.topbar{border-bottom:1px solid #e1e9e4}.brand{color:#24352d}.ball{background:#3d8a68;border-color:#fff;box-shadow:0 2px 8px #3d8a6826}.desktop-guide button{color:#77847e}.desktop-guide button:hover,.desktop-guide button.active{background:#e8f2ec;color:#286548}.pin-button,.btn{background:#fff;color:#355247;border-color:#d8e4dd;box-shadow:none}.pin-button span{color:#3d8a68}.btn.primary{background:#3d8a68;color:#fff;border-color:#3d8a68}.btn.warn{background:#fff5f2;border-color:#edc7be;color:#9b4739}.btn.ghost{background:transparent}.btn:hover,.pin-button:hover{border-color:#76aa91}.hero p,.section-note,.meta,.field label,.avatar-input,.rule p,.modal p,.admin-panel>p{color:#77847e}.eyebrow{color:#3d8a68}.status-card,.card{background:#fff;border-color:#dce6e0;box-shadow:none}.status-card{background:#f0f7f2}.stage{color:#9b6e20}.input,select{background:#fff;color:#24352d;border-color:#d8e4dd}.input:focus,select:focus{border-color:#5d9d7d;box-shadow:0 0 0 3px #dceee4}.person-pill{background:#f4f8f5;border-color:#dce6e0;color:#355247}.avatar{background:#dceee4;color:#286548}.match,.stat,.winner-pick{background:#fff;border-color:#dce6e0;color:#24352d}.match-top,.frame-detail{color:#77847e;border-color:#e5ece8}.score{color:#9b6e20}.frame strong{color:#355247}.tabs button{border-color:#d8e4dd;color:#77847e}.tabs button.active{background:#e8f2ec;border-color:#a9cdb8;color:#286548}.standing th{color:#77847e}.standing td{border-color:#e4ece7}.rank{color:#9b6e20}.champion{background:#fff9e7;border-color:#ecdca7}.empty{border-color:#ceded5;color:#77847e;background:#fbfcfb}.rule{border-color:#e5ece8}.rule-num{color:#3d8a68}.winner-pick.selected{border-color:#4e9875;background:#edf7f0}.modal-backdrop{background:#24352d33}.modal{background:#fff;border-color:#dce6e0;box-shadow:0 18px 50px #24352d22}.admin-menu button{color:#77847e}.admin-menu button.active{background:#e8f2ec;color:#286548}.admin-row,.log{border-color:#e5ece8}.mobile-nav{background:#fffffff2;border-color:#dce6e0}.mobile-nav button{color:#77847e}.mobile-nav button.active{color:#286548}#toast{background:#e8f2ec;color:#286548}
+  </style>
+  <style>
+    .avatar.player-accent{background:var(--player-bg);color:var(--player-ink);border:2px solid var(--player-border)}
+    img.avatar.player-accent{object-fit:cover}.player-card{border-left:4px solid var(--player-ink)!important;background:linear-gradient(135deg,var(--player-bg),#fff 42%)!important}
+    .versus .player-name{display:flex;align-items:center;gap:7px;min-width:0;white-space:nowrap}.versus .player-name:last-child{justify-content:flex-end}.versus .avatar{flex:0 0 auto}
+  </style>
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="topbar wrap">
+    <button class="brand" data-view="home"><span class="ball">8</span><span><b id="brandTitle">中式黑八挑战赛</b></span></button>
+    <nav class="desktop-guide" id="desktopGuide" aria-label="桌面端页面指引">
+      <button data-view="home">首页</button><button data-view="schedule">赛程比分</button><button data-view="standings">小组积分榜</button><button data-view="bracket">淘汰赛</button><button data-view="stats">统计榜</button><button data-view="rules">规则说明</button>
+    </nav>
+    <button id="adminEntry" class="pin-button">管理入口 <span>⌘</span></button>
+  </header>
+  <main class="wrap" id="app"></main>
+  <nav class="mobile-nav" id="nav">
+    <button data-view="home">首页</button><button data-view="schedule">赛程</button><button data-view="standings">排名</button><button data-view="stats">统计</button><button data-view="rules">规则</button>
+  </nav>
+  <div id="modalRoot"></div>
+  <div id="toast"></div>
+  <script type="module" src="/app.js?v=rules-8"></script>
+</body>
+</html>
